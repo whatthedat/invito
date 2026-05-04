@@ -15,7 +15,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <div className="relative group">
           {icon && (
             <div className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-black transition-colors pointer-events-none">
-              {React.cloneElement(icon as React.ReactElement, { className: "w-5 h-5" })}
+              {React.cloneElement(icon as React.ReactElement<any>, { className: "w-5 h-5" })}
             </div>
           )}
           <input
